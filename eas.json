@@ -1,0 +1,47 @@
+{
+  "cli": {
+    "version": ">= 7.0.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "simulator": {
+      "ios": {
+        "simulator": true
+      },
+      "env": {
+        "EXPO_PUBLIC_MAPBOX_TOKEN": "pk.your_mapbox_token",
+        "EXPO_PUBLIC_API_BASE_URL": "https://your-app.up.railway.app",
+        "EXPO_PUBLIC_MAP_STYLE": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_MAPBOX_TOKEN": "pk.your_mapbox_token",
+        "EXPO_PUBLIC_API_BASE_URL": "https://your-app.up.railway.app",
+        "EXPO_PUBLIC_MAP_STYLE": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
+      }
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_MAPBOX_TOKEN": "pk.your_mapbox_token",
+        "EXPO_PUBLIC_API_BASE_URL": "https://your-app.up.railway.app",
+        "EXPO_PUBLIC_MAP_STYLE": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "your-app-store-connect-app-id",
+        "ascTeamId": "your-team-id"
+      }
+    }
+  }
+}
